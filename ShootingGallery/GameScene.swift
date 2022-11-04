@@ -189,7 +189,7 @@ class GameScene: SKScene {
         let hitNodes = nodes(at: location).filter { $0.name == "target" }
         guard let hitNode = hitNodes.first else { return }
         guard let parentNode = hitNode.parent as? Target else { return }
-        parentNode.removeFromParent()
+        parentNode.hit()
         
         score += 3
     }
