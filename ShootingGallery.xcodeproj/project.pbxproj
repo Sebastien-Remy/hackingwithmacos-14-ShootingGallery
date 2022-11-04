@@ -20,6 +20,7 @@
 /* Begin PBXFileReference section */
 		96019679291566380036168F /* shot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shot.wav; sourceTree = "<group>"; };
 		9601967A291566380036168F /* reload.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = reload.wav; sourceTree = "<group>"; };
+		96CC7B7C291567CD003D08B7 /* ShootingGallery.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShootingGallery.entitlements; sourceTree = "<group>"; };
 		96F327792915643300C51737 /* ShootingGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShootingGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F3277C2915643300C51737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96F3277E2915643300C51737 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -27,7 +28,6 @@
 		96F327842915643300C51737 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96F327862915643400C51737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96F327892915643400C51737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		96F3278B2915643400C51737 /* ShootingGalley.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShootingGalley.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 				9601967A291566380036168F /* reload.wav */,
 				96019679291566380036168F /* shot.wav */,
 				96F327882915643400C51737 /* Main.storyboard */,
-				96F3278B2915643400C51737 /* ShootingGalley.entitlements */,
+				96CC7B7C291567CD003D08B7 /* ShootingGallery.entitlements */,
 			);
 			path = ShootingGallery;
 			sourceTree = "<group>";
