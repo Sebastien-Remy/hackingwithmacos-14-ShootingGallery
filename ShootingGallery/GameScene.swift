@@ -158,7 +158,7 @@ class GameScene: SKScene {
         targetDelay *= 0.99
         targetCreated += 1
         
-        if targetCreated < 100 {
+        if targetCreated < 10 {
             // schedule another target
             DispatchQueue.main.asyncAfter(deadline: .now() + targetDelay) {
                 self.createTarget()
@@ -173,7 +173,11 @@ class GameScene: SKScene {
     
     override func mouseDown(with event: NSEvent) {
         if isGameOver {
-            // Ignore
+            // Start a new game
+            if let newGame = SKScene(fileNamed: "GameScene") {
+                let transition = SKTransition.doorway(withDuration: 1)
+                view?.presentScene(newGame, transition: transition)
+            }
         } else {
             if bulletsInClip > 0 {
                 run(SKAction.playSoundFileNamed("shot.wav", waitForCompletion: false))
