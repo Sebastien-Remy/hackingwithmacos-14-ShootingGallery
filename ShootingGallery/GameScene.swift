@@ -156,7 +156,6 @@ class GameScene: SKScene {
     func levelUp() {
         targetSpeed *= 0.99
         targetDelay *= 0.99
-        
         targetCreated += 1
         
         if targetCreated < 100 {
@@ -166,6 +165,9 @@ class GameScene: SKScene {
             }
         } else {
             // Game over
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                self.gameOver()
+            }
         }
     }
     
@@ -202,6 +204,23 @@ class GameScene: SKScene {
             bulletsInClip = 3
             score -= 1
         }
+    }
+    
+    func gameOver() {
+        isGameOver = true
+        
+        let gameOverTitle = SKSpriteNode(imageNamed: "game-over")
+        gameOverTitle.position = CGPoint(x: 400, y: 300)
+        gameOverTitle.setScale(2)
+        gameOverTitle.alpha = 0
+        
+        let fadeIn = SKAction.fadeIn(withDuration: 0.3)
+        let scaleDown = SKAction.scale(to: 1, duration: 0.3)
+        let group = SKAction.group([fadeIn, scaleDown])
+        
+        gameOverTitle.run(group)
+        gameOverTitle.zPosition = 900
+        addChild(gameOverTitle)
     }
 }
 

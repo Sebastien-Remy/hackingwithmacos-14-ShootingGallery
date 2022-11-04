@@ -11,6 +11,7 @@
 		9601967C291566380036168F /* reload.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9601967A291566380036168F /* reload.wav */; };
 		96CC7B7E29156C89003D08B7 /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CC7B7D29156C89003D08B7 /* Target.swift */; };
 		96CC7B80291574F3003D08B7 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CC7B7F291574F3003D08B7 /* GameView.swift */; };
+		96CC7B8229157A18003D08B7 /* empty.wav in Resources */ = {isa = PBXBuildFile; fileRef = 96CC7B8129157A18003D08B7 /* empty.wav */; };
 		96F3277D2915643300C51737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3277C2915643300C51737 /* AppDelegate.swift */; };
 		96F3277F2915643300C51737 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 96F3277E2915643300C51737 /* GameScene.sks */; };
 		96F327832915643300C51737 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F327822915643300C51737 /* GameScene.swift */; };
@@ -25,6 +26,7 @@
 		96CC7B7C291567CD003D08B7 /* ShootingGallery.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShootingGallery.entitlements; sourceTree = "<group>"; };
 		96CC7B7D29156C89003D08B7 /* Target.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
 		96CC7B7F291574F3003D08B7 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		96CC7B8129157A18003D08B7 /* empty.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = empty.wav; sourceTree = "<group>"; };
 		96F327792915643300C51737 /* ShootingGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShootingGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F3277C2915643300C51737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96F3277E2915643300C51737 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				96F327842915643300C51737 /* ViewController.swift */,
 				96F327862915643400C51737 /* Assets.xcassets */,
 				9601967A291566380036168F /* reload.wav */,
+				96CC7B8129157A18003D08B7 /* empty.wav */,
 				96019679291566380036168F /* shot.wav */,
 				96F327882915643400C51737 /* Main.storyboard */,
 				96CC7B7C291567CD003D08B7 /* ShootingGallery.entitlements */,
@@ -139,6 +142,7 @@
 			files = (
 				96F3277F2915643300C51737 /* GameScene.sks in Resources */,
 				96F327872915643400C51737 /* Assets.xcassets in Resources */,
+				96CC7B8229157A18003D08B7 /* empty.wav in Resources */,
 				9601967B291566380036168F /* shot.wav in Resources */,
 				96F3278A2915643400C51737 /* Main.storyboard in Resources */,
 				9601967C291566380036168F /* reload.wav in Resources */,
