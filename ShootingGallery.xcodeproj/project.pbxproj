@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		96F3277D2915643300C51737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3277C2915643300C51737 /* AppDelegate.swift */; };
 		96F3277F2915643300C51737 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 96F3277E2915643300C51737 /* GameScene.sks */; };
-		96F327812915643300C51737 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 96F327802915643300C51737 /* Actions.sks */; };
 		96F327832915643300C51737 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F327822915643300C51737 /* GameScene.swift */; };
 		96F327852915643300C51737 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F327842915643300C51737 /* ViewController.swift */; };
 		96F327872915643400C51737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96F327862915643400C51737 /* Assets.xcassets */; };
@@ -17,10 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		96F327792915643300C51737 /* ShootingGalley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShootingGalley.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96F327792915643300C51737 /* ShootingGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShootingGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F3277C2915643300C51737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96F3277E2915643300C51737 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		96F327802915643300C51737 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		96F327822915643300C51737 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		96F327842915643300C51737 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96F327862915643400C51737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,7 +40,7 @@
 		96F327702915643300C51737 = {
 			isa = PBXGroup;
 			children = (
-				96F3277B2915643300C51737 /* ShootingGalley */,
+				96F3277B2915643300C51737 /* ShootingGallery */,
 				96F3277A2915643300C51737 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,32 +48,31 @@
 		96F3277A2915643300C51737 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				96F327792915643300C51737 /* ShootingGalley.app */,
+				96F327792915643300C51737 /* ShootingGallery.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		96F3277B2915643300C51737 /* ShootingGalley */ = {
+		96F3277B2915643300C51737 /* ShootingGallery */ = {
 			isa = PBXGroup;
 			children = (
 				96F3277C2915643300C51737 /* AppDelegate.swift */,
 				96F3277E2915643300C51737 /* GameScene.sks */,
-				96F327802915643300C51737 /* Actions.sks */,
 				96F327822915643300C51737 /* GameScene.swift */,
 				96F327842915643300C51737 /* ViewController.swift */,
 				96F327862915643400C51737 /* Assets.xcassets */,
 				96F327882915643400C51737 /* Main.storyboard */,
 				96F3278B2915643400C51737 /* ShootingGalley.entitlements */,
 			);
-			path = ShootingGalley;
+			path = ShootingGallery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		96F327782915643300C51737 /* ShootingGalley */ = {
+		96F327782915643300C51737 /* ShootingGallery */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 96F3278E2915643400C51737 /* Build configuration list for PBXNativeTarget "ShootingGalley" */;
+			buildConfigurationList = 96F3278E2915643400C51737 /* Build configuration list for PBXNativeTarget "ShootingGallery" */;
 			buildPhases = (
 				96F327752915643300C51737 /* Sources */,
 				96F327762915643300C51737 /* Frameworks */,
@@ -85,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = ShootingGalley;
+			name = ShootingGallery;
 			productName = ShootingGalley;
-			productReference = 96F327792915643300C51737 /* ShootingGalley.app */;
+			productReference = 96F327792915643300C51737 /* ShootingGallery.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 96F327742915643300C51737 /* Build configuration list for PBXProject "ShootingGalley" */;
+			buildConfigurationList = 96F327742915643300C51737 /* Build configuration list for PBXProject "ShootingGallery" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				96F327782915643300C51737 /* ShootingGalley */,
+				96F327782915643300C51737 /* ShootingGallery */,
 			);
 		};
 /* End PBXProject section */
@@ -130,7 +127,6 @@
 			files = (
 				96F3277F2915643300C51737 /* GameScene.sks in Resources */,
 				96F327872915643400C51737 /* Assets.xcassets in Resources */,
-				96F327812915643300C51737 /* Actions.sks in Resources */,
 				96F3278A2915643400C51737 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,7 +328,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		96F327742915643300C51737 /* Build configuration list for PBXProject "ShootingGalley" */ = {
+		96F327742915643300C51737 /* Build configuration list for PBXProject "ShootingGallery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96F3278C2915643400C51737 /* Debug */,
@@ -341,7 +337,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		96F3278E2915643400C51737 /* Build configuration list for PBXNativeTarget "ShootingGalley" */ = {
+		96F3278E2915643400C51737 /* Build configuration list for PBXNativeTarget "ShootingGallery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96F3278F2915643400C51737 /* Debug */,
