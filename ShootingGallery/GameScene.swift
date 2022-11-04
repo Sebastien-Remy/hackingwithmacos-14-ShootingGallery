@@ -12,10 +12,27 @@ class GameScene: SKScene {
     
     var bulletsSprite: SKSpriteNode!
     var scoreLabel: SKLabelNode!
-    
+    var bulletTextures = [
+        SKTexture(imageNamed: "shots0"),
+        SKTexture(imageNamed: "shots1"),
+        SKTexture(imageNamed: "shots2"),
+        SKTexture(imageNamed: "shots3")
+    ]
+    var bulletsInClip = 3 {
+        didSet {
+            bulletsSprite.texture = bulletTextures[bulletsInClip]
+        }
+    }
+
     var targetSpeed = 4.0
     var targetDelay = 0.8
     var targetCreated = 0
+    var isGameOver = false
+    var score = 0 {
+        didSet {
+            scoreLabel.text = "Score: \(score)"
+        }
+    }
     
     override func didMove(to view: SKView) {
         
@@ -149,6 +166,41 @@ class GameScene: SKScene {
             }
         } else {
             // Game over
+        }
+    }
+    
+    override func mouseDown(with event: NSEvent) {
+        if isGameOver {
+            // Ignore
+        } else {
+            if bulletsInClip > 0 {
+                run(SKAction.playSoundFileNamed("shot.wav", waitForCompletion: false))
+                bulletsInClip -= 1
+                
+                let location = event.location(in: self)
+                shot(at: location)
+            } else {
+                run(SKAction.playSoundFileNamed("empty.wav", waitForCompletion: false))
+            }
+        }
+    }
+    
+    func shot(at location: CGPoint) {
+        let hitNodes = nodes(at: location).filter { $0.name == "target" }
+        guard let hitNode = hitNodes.first else { return }
+        guard let parentNode = hitNode.parent as? Target else { return }
+        parentNode.removeFromParent()
+        
+        score += 3
+    }
+    
+    override func keyDown(with event: NSEvent) {
+        guard isGameOver == false else { return }
+        
+        if event.charactersIgnoringModifiers == " " {
+            run(SKAction.playSoundFileNamed("reload.wav", waitForCompletion: false))
+            bulletsInClip = 3
+            score -= 1
         }
     }
 }
